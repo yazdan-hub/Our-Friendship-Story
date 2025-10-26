@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Website for Best Friend</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* A deep, friendly night sky color */
+        }
+        .font-cursive {
+            font-family: 'Great Vibes', cursive;
+        }
+        .section-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .section-fade-in.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .star-shine {
+            animation: star-shine 2s ease-in-out infinite alternate;
+        }
+        @keyframes star-shine {
+            0% { transform: scale(1); opacity: 0.7; }
+            100% { transform: scale(1.2); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="text-white overflow-x-hidden relative">
+  <!-- Video BG -->
+  <video autoplay loop muted playsinline class="fixed top-0 left-0 w-screen h-screen object-cover z-0" style="pointer-events: none;">
+    <source src="galaxy.mp4" type="video/mp4">
+  </video>
+  <div class="relative z-10">
+    <!-- Your page content sections here -->
+  </div>
+</body>
+
+<body class="text-white overflow-x-hidden">
+
+    <!-- Hero Section -->
+    <section id="hero" class="h-screen w-screen flex flex-col justify-center items-center text-center p-4 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://img.lovepik.com/background/20211022/large/lovepik-background-of-friends-image_500867641.jpg');">
+        <!-- TODO: Yahan par Malika ki ya koi symbolic, jaise stars ya sky ki photo laga sakte ho. -->
+         <h1 class="font-cursive text-7xl md:text-9xl text-cyan-300 drop-shadow-lg">For My Awesome Friend, </h1>
+<!-- Down Arrow Scroll Indicator -->
+<a href="#our-story" class="mt-8 flex justify-center animate-bounce">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+  </svg>
+</a>
+
+        <p class="mt-4 text-xl md:text-2xl text-gray-200">So excited to finally meet you tomorrow!</p>
+        <div class="absolute bottom-10 animate-bounce">
+            <a href="#our-story">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="our-story" class="min-h-screen py-20 px-4 md:px-10 flex items-center bg-gray-800">
+        <div class="container mx-auto max-w-5xl section-fade-in">
+            <h2 class="font-cursive text-5xl md:text-7xl text-center mb-12 text-cyan-300">Our Friendship So Far...</h2>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="https://wallpapercave.com/wp/wp2415028.jpg" alt="Friendship" class="rounded-2xl shadow-2xl w-full">
+                    <!-- TODO: Yahan koi aisi image lagao jo online friendship ko represent kare. -->
+                </div>
+                <div class="md:w-1/2 text-lg text-gray-300 space-y-4">
+                    <h3 class="text-3xl font-bold text-white">How We Connected</h3>
+                    <p>I still remember our first chat. Who knew an online conversation would turn into such an amazing friendship!</p>
+                    <p>
+                        <!-- TODO: Yahan par 1-2 line me likho ki aapki dosti kaise shuru hui. Example: "We started talking about [Topic] and I instantly knew we'd get along great. Hamari baatein kabhi khatam hi nahi hoti." -->
+                        We started talking, and it felt like we'd known each other for years. It's rare to find someone who just gets you, and I'm so glad I found that in you. Hamari baatein kabhi khatam hi nahi hoti, and honestly, I hope they never do.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualities Section -->
+    <section id="qualities" class="py-20 px-4 md:px-10 bg-gray-900">
+        <div class="container mx-auto max-w-6xl section-fade-in">
+            <h2 class="font-cursive text-5xl md:text-7xl text-center mb-16 text-cyan-300">Things I Admire About You</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quality 1 -->
+                <div class="bg-gray-800 p-6 rounded-2xl shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-xl font-bold mb-2">Your Sense of Humor</h3>
+                    <p class="text-gray-400">
+                         <!-- TODO: Isko apne hisab se personalize karo. -->
+                        You always know how to make me laugh. Our chats are genuinely the best part of my day.
+                    </p>
+                </div>
+                <!-- Quality 2 -->
+                <div class="bg-gray-800 p-6 rounded-2xl shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-xl font-bold mb-2">Your Supportive Nature</h3>
+                    <p class="text-gray-400">
+                        <!-- TODO: Isko apne hisab se personalize karo. -->
+                        You're an amazing listener and always so supportive. Thank you for being such a great friend.
+                    </p>
+                </div>
+                <!-- Quality 3 -->
+                <div class="bg-gray-800 p-6 rounded-2xl shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+                     <h3 class="text-xl font-bold mb-2">Your Awesome Taste</h3>
+                    <p class="text-gray-400">
+                        <!-- TODO: Isko apne hisab se personalize karo, jaise 'Taste in Music', 'in Movies' etc. -->
+                        I love that we can talk about studies, coding, and our lives for hours. It's so cool to have a friend like you.
+                    </p>
+                </div>
+                <!-- Quality 4 -->
+                <div class="bg-gray-800 p-6 rounded-2xl shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+                     <h3 class="text-xl font-bold mb-2">Your Amazing Personality</h3>
+                    <p class="text-gray-400">
+                        <!-- TODO: Isko apne hisab se personalize karo. -->
+                        I really love your vibe. Your sense of style is on point, and the way you genuinely care about others is just awesome.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why You're a Great Friend Section -->
+    <section id="great-friend" class="min-h-screen py-20 px-4 md:px-10 flex items-center bg-gray-800">
+        <div class="container mx-auto max-w-5xl text-center section-fade-in">
+            <h2 class="font-cursive text-5xl md:text-7xl mb-12 text-cyan-300">Why You're an Amazing Friend</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="space-y-2">
+                    <div class="text-5xl text-cyan-400 flex justify-center">
+                       <!-- Star Icon -->
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold">Your Positivity</h3>
+                    <p class="text-gray-400">
+                        <!-- TODO: Yahan par kuch personal likho. -->
+                        Your positive energy is infectious and always brightens my day.
+                    </p>
+                </div>
+                 <div class="space-y-2">
+                     <div class="text-5xl text-cyan-400 flex justify-center">
+                       <!-- Chat Icon -->
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" /></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold">Great Conversations</h3>
+                    <p class="text-gray-400">
+                        <!-- TODO: Yahan par kuch personal likho. -->
+                        We can talk about anything and everything. I truly value our chats.
+                    </p>
+                </div>
+                 <div class="space-y-2">
+                     <div class="text-5xl text-cyan-400 flex justify-center">
+                        <!-- Sparkles Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2_54l2.288-.001a1 1 0 01.967.744l.82 2.502-1.414 1.414-2.502-.82a1 1 0 01-.744-.967l.001-2.288L8.746 3.033A1 1 0 0110 2h2zm-2 10a1 1 0 01.967.744l.82 2.502-1.414 1.414-2.502-.82a1 1 0 01-.744-.967l.001-2.288 1.188-1.188A1 1 0 0110 12h.001z" clip-rule="evenodd" /></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold">You're Genuine</h3>
+                    <p class="text-gray-400">
+                        <!-- TODO: Yahan par kuch personal likho. -->
+                        You are always real and honest, and that's one of the best things about you.
+                    </p>
+                </div>
+            </div>
+            <button id="revealButton" class="mt-20 bg-cyan-500 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:bg-cyan-600 transition-colors duration-300 text-xl">And one last thing...</button>
+        </div>
+    </section>
+
+    <!-- The Meeting Section - Initially Hidden -->
+    <section id="the-meeting" class="hidden min-h-screen py-20 px-4 md:px-10 flex flex-col justify-center items-center text-center bg-gray-900">
+        <div class="container mx-auto max-w-4xl section-fade-in">
+             <div class="text-cyan-400 mb-8 star-shine">
+                <!-- Friendship Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21v-1a6 6 0 00-5.176-5.97M15 21h6v-1a6 6 0 00-9-5.197" />
+                </svg>
+            </div>
+            <h2 class="font-cursive text-6xl md:text-8xl mb-6 text-white">Best Friend,</h2>
+            <p class="text-xl md:text-3xl text-gray-300 mb-12">
+                Our online friendship has been incredible, and I feel like I've known you for ages. I am genuinely so excited to finally meet you in person tomorrow and start a new chapter of our dosti!
+            </p>
+            <h3 class="text-4xl md:text-5xl font-bold text-cyan-300">Cheers to our friendship and all the adventures to come!</h3>
+            <p class="mt-12 text-2xl text-gray-400">See you soon!</p>
+        </div>
+    </section>
+
+    <script>
+        // --- Intersection Observer for fade-in animations ---
+        const sections = document.querySelectorAll('.section-fade-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // --- Message reveal logic ---
+        const revealButton = document.getElementById('revealButton');
+        const meetingSection = document.getElementById('the-meeting');
+
+        revealButton.addEventListener('click', () => {
+            meetingSection.classList.remove('hidden');
+            // Animate fade in
+            setTimeout(() => {
+                meetingSection.classList.add('is-visible');
+            }, 100);
+            
+            meetingSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
